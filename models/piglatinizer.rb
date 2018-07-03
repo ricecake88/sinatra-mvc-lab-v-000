@@ -30,7 +30,3 @@ class PigLatinizer
   end
   
 end
-
-pg = PigLatinizer.new("Testing all my words")
-pg.textIntoArray
-pg.pgWords.each {|word| puts word }
