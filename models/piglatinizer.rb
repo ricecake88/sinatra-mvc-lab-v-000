@@ -16,6 +16,7 @@ class PigLatinizer
       puts str[0]
       return str + "-ay"
     else
+      puts str[0]
       return str[1..str.size] + "-" + str[0] + "ay"
     end
   end
