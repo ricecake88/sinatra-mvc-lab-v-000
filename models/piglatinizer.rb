@@ -7,7 +7,7 @@ class PigLatinizer
   end
   
   def textIntoArray
-    @text.split("")
+    @text.split(" ")
   end
   
   def convertToPigLatin(str)
