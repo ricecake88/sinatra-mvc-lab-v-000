@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
   
   post '/' do
+    PigLatinizer.new
   end
   
 end
