@@ -4,6 +4,7 @@ class PigLatinizer
   
   def initialize(text)
     @text = text
+    @pgWords = []
   end
   
   def textIntoArray
