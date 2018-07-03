@@ -8,15 +8,14 @@ class PigLatinizer
   
   def textIntoArray
     words = @text.split(" ")
-    @pgWords = words.each {|word| convertToPigLatin(word)}
+    words.each {|word| @pgWords << convertToPigLatin(word)}
+    @pgWords
   end
   
   def convertToPigLatin(str)
     if vowel?(str[0])
-      puts str[0]
       return str + "-ay"
     else
-      puts str[0]
       return str[1..str.size] + "-" + str[0] + "ay"
     end
   end
