@@ -12,6 +12,7 @@ class PigLatinizer
   end
   
   def convertToPigLatin(str)
+    puts str
     if vowel?(str[0])
       return str + "-ay"
     else
