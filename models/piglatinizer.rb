@@ -1,13 +1,14 @@
 class PigLatinizer
   
-  attr_accessor :text
+  attr_accessor :text, :pgWords
   
   def initialize(text)
     @text = text
   end
   
   def textIntoArray
-    @text.split(" ")
+    words = @text.split(" ")
+    @pgWords = words.each {|word| convertToPigLatin(word) }
   end
   
   def convertToPigLatin(str)
