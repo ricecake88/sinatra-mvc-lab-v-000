@@ -29,6 +29,6 @@ class PigLatinizer
   
 end
 
-pg = PigLatinizer.new
-str = pg.convertToPigLatin("hello")
+pg = PigLatinizer.new("Testing all my words")
+pg.textIntoArray
 puts str
