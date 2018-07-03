@@ -4,7 +4,7 @@ class PigLatinizer
     if vowel?(str[0])
       return str + "-ay"
     else
-      return str[1..str.size] + str[0] + "ay"
+      return str[1..str.size] + "-" + str[0] + "ay"
     end
   end
   
