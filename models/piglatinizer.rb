@@ -1,8 +1,5 @@
 class PigLatinizer 
   
-  def initialize
-  end
-  
   def convertToPigLatin(str)
     if vowel?(str[0])
       return str + "ay"
@@ -20,3 +17,6 @@ class PigLatinizer
   end
   
 end
+
+pg = PigLatinizer.new
+pg.convertToPigLatin("hello")
