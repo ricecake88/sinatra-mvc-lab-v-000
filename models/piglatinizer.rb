@@ -9,7 +9,7 @@ class PigLatinizer
   end
   
   def vowel?(character)
-    if /W[aeiou]rd/.match(character.lowercase)
+    if /W[aeiou]rd/.match(character.downcase)
       return true
     else
       return false
