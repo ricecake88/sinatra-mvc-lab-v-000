@@ -4,11 +4,18 @@ class PigLatinizer
   end
   
   def convertToPigLatin(str)
-    str[0]
+    if vowel?(str[0])
+      return str + "ay"
+    else
+      return  
+    end
   end
   
-  def checkIfVowel(character)
-    if character
+  def vowel?(character)
+    if /W[aeiou]rd/.match(character.lowercase)
+      return true
+    else
+      return false
   end
   
 end
