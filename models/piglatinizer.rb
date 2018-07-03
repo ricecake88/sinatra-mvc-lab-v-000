@@ -8,7 +8,7 @@ class PigLatinizer
   
   def textIntoArray
     words = @text.split(" ")
-    @pgWords = words.each {|word| convertToPigLatin(word) }
+    @pgWords = words.each {|word| convertToPigLatin(word)}
   end
   
   def convertToPigLatin(str)
