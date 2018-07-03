@@ -7,4 +7,8 @@ class PigLatinizer
     str[0]
   end
   
+  def checkIfVowel(character)
+    if character
+  end
+  
 end
