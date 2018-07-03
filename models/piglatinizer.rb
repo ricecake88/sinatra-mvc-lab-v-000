@@ -1,4 +1,14 @@
-class PigLatinizer 
+class PigLatinizer
+  
+  attr_accessor :text
+  
+  def initialize(text)
+    @text = text
+  end
+  
+  def textIntoArray
+    @text.split("")
+  end
   
   def convertToPigLatin(str)
     if vowel?(str[0])
