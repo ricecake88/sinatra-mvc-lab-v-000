@@ -19,5 +19,5 @@ class PigLatinizer
 end
 
 pg = PigLatinizer.new
-str = pg.convertToPigLatin("hello")
+str = pg.convertToPigLatin("ello")
 puts str
