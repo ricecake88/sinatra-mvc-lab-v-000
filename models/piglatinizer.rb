@@ -4,7 +4,7 @@ class PigLatinizer
   end
   
   def convertToPigLatin(str)
-    
+    str[0]
   end
   
 end
