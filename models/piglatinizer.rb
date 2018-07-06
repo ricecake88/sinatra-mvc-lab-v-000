@@ -2,10 +2,6 @@ class PigLatinizer
   
   attr_accessor :text, :pgWords
   
-  def initialize
-    @pgWords = []
-  end
-  
   def piglatinize(str)
     words = str.downcase.split(" ")
     words.each {|word| @pgWords.push(transform(word))}
