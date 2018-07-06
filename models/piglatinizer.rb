@@ -21,8 +21,10 @@ class PigLatinizer
   end
   
   def vowelIndex(str)
-    [0..str.size].each_with_index do |num|
-      puts num
+    str.chars.each_with_index do |char, index|
+      if vowel?(char)
+        return index
+      end
     end
   end
   
