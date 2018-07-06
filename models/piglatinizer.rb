@@ -20,6 +20,10 @@ class PigLatinizer
     end
   end
   
+  def vowelIndex(str)
+    str.each
+  end
+  
   def vowel?(character)
     if /[aeiou]/.match(character.downcase)
       return true
