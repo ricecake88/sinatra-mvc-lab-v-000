@@ -7,8 +7,7 @@ class App < Sinatra::Base
   end
   
   post '/' do
-    params[:text]
-    pg = PigLatinizer.new
+    pg = PigLatinizer.new(params[:text])
   end
   
 end
