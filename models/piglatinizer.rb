@@ -6,7 +6,7 @@ class PigLatinizer
     @pgWords = []
   end
   
-  def piglatinizer(str)
+  def piglatinize(str)
     words = @text.downcase.split(" ")
     words.each {|word| @pgWords.push(transform(word))}
     @pgWords
