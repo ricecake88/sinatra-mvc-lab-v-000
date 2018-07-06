@@ -41,3 +41,5 @@ class PigLatinizer
 end
 
 pg = PigLatinizer.new
+str = pg.piglatinize("pork")
+puts str
