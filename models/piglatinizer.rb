@@ -13,14 +13,16 @@ class PigLatinizer
   end
   
   def piglatinize(str)
-    if vowel?(str[0])
-      return str + "way"
+    splitIndex = vowelIndex(str)
+    if splitIndex == -1
+      return str + "ay"
     else
-      return str[1..str.size] + str[0] + "ay"
+      return str[splitIndex+1..str.size] + str[0..splitIndex] + "ay"
     end
   end
   
   def vowelIndex(str)
+    index = -1
     str.chars.each_with_index do |char, index|
       if vowel?(char)
         return index
