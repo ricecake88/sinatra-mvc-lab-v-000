@@ -17,7 +17,7 @@ class PigLatinizer
     if splitIndex == -1
       return str + "ay"
     else
-      return str[splitIndex+1..str.size] + str[0..splitIndex] + "ay"
+      return str[splitIndex..str.size] + str[0..splitIndex-1] + "ay"
     end
   end
   
