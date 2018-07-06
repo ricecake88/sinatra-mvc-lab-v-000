@@ -6,13 +6,13 @@ class PigLatinizer
     @pgWords = []
   end
   
-  def textIntoArray
+  def piglatinizer(str)
     words = @text.downcase.split(" ")
     words.each {|word| @pgWords.push(piglatinizer(word))}
     @pgWords
   end
   
-  def piglatinize(str)
+  def transform(str)
     splitIndex = vowelIndex(str)
     if splitIndex == -1
       return str + "way"
