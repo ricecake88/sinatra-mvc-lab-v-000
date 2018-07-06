@@ -14,7 +14,7 @@ class PigLatinizer
   
   def piglatinize(str)
     if vowel?(str[0])
-      return str + "ay"
+      return str + "way"
     else
       return str[1..str.size] + str[0] + "ay"
     end
