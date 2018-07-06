@@ -39,3 +39,5 @@ class PigLatinizer
   end
   
 end
+
+pg = PigLatinizer.new
