@@ -12,7 +12,7 @@ class PigLatinizer
     @pgWords
   end
   
-  def piglatinizer(str)
+  def piglatinize(str)
     if vowel?(str[0])
       return str + "ay"
     else
