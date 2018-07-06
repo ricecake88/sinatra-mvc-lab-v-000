@@ -8,7 +8,7 @@ class PigLatinizer
   
   def piglatinizer(str)
     words = @text.downcase.split(" ")
-    words.each {|word| @pgWords.push(piglatinizer(word))}
+    words.each {|word| @pgWords.push(transform(word))}
     @pgWords
   end
   
