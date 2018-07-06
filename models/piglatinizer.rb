@@ -15,7 +15,7 @@ class PigLatinizer
   def piglatinize(str)
     splitIndex = vowelIndex(str)
     if splitIndex == -1
-      return str + "ay"
+      return str + "way"
     else
       return str[splitIndex..str.size] + str[0..splitIndex-1] + "ay"
     end
