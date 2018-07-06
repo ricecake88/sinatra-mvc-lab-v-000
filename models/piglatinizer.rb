@@ -2,8 +2,7 @@ class PigLatinizer
   
   attr_accessor :text, :pgWords
   
-  def initialize(text)
-    @text = text
+  def initialize
     @pgWords = []
   end
   
